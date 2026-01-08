@@ -1,0 +1,10 @@
+python src/server.py
+
+curl.exe -x http://localhost:8888 http://example.com
+
+curl.exe -x http://localhost:8888 http://iana.org
+
+curl.exe -x http://localhost:8888 http://example.com
+curl.exe -x http://localhost:8888 http://iana.org
+
+echo "GET / HTTP/1.1" | curl.exe -x http://localhost:8888 http://localhost --http1.1
